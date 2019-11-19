@@ -13,12 +13,12 @@ attr_accessor :email_addresses
  end
 
 def parse
-   @email_addresses.split(/[^,\s][^\,]*[^,\s]*/).uniq
+   @email_addresses.split(/[^,\s|,|]*/).uniq
 
   end
 #  @email_addresses.split(" ").uniq.map do |email|
 #binding.pry
-
+#[^,\s][^\,]*[^,\s]*
 
   #    end
 
